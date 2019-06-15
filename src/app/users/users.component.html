@@ -1,0 +1,9 @@
+<h1>Les utilisateurs</h1>
+<ul>
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/contact">Contact</a></li>
+  <li><a routerLink="list" routerLinkActive="active">liste</a></li>
+  <li><a routerLink="detail/1" routerLinkActive="active">Utilisateur 1</a></li>
+  <li><a [routerLink]="['detail', userId]">Utilisateur {{ userId }}</a></li>
+</ul>
+<router-outlet></router-outlet>
